@@ -79,10 +79,14 @@ const Shop = () => {
         },
     ];
 
-    const [cap, setCaps] = useState([]);
+    const [cap, setCap] = useState([]);
     const handelAddToCart = (selectedCap) => {
         const newCap = [...cap, selectedCap];
-        setCaps(newCap);
+        setCap(newCap);
+    }
+    const chooseAgainBtn = () => {
+        const cap = [];
+        setCap(cap);
     }
     return (
         <div className='shop-container'>
@@ -99,6 +103,7 @@ const Shop = () => {
                 <Cart
                     cap={cap}
                     key={cap.id}
+                    chooseAgainBtn={chooseAgainBtn}
                 ></Cart>
             </div>
         </div>

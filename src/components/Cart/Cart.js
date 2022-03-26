@@ -1,6 +1,6 @@
 import { RiDeleteBinLine } from 'react-icons/ri';
 import './Cart.css'
-const Cart = ({ cap }) => {
+const Cart = ({ cap, chooseAgainBtn }) => {
     // console.log(cap)
     let capName;
     let img;
@@ -22,14 +22,14 @@ const Cart = ({ cap }) => {
                 ))
             }
             <div className="cart">
-                <img src={img} alt="" />
+                <img src={img} alt="No item" />
                 <p>{capName} Price:${price}</p>
                 <RiDeleteBinLine className='icon'></RiDeleteBinLine>
 
             </div>
             <button className='for-me-btn'>CHOOSE 1 FOR ME</button>
             <br />
-            <button className='again-btn'>CHOOSE AGAIN</button>
+            <button onClick={chooseAgainBtn} className='again-btn'>CHOOSE AGAIN</button>
         </div>
     );
 };
