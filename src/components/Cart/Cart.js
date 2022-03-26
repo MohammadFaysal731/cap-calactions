@@ -1,8 +1,7 @@
 import { RiDeleteBinLine } from 'react-icons/ri';
 import './Cart.css'
 const Cart = ({ cap }) => {
-
-    console.log(cap)
+    // console.log(cap)
     let capName;
     let img;
     let price;
@@ -19,7 +18,7 @@ const Cart = ({ cap }) => {
             <h5>Selected Cap:{cap.length}</h5>
             {
                 cap.map(item => (
-                    <h1 key={item.id}>{item.name}</h1>
+                    <h4 key={item.id}>{item.name}:${item.price}</h4>
                 ))
             }
             <div className="cart">
