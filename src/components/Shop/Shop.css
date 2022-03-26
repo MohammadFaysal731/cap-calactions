@@ -14,12 +14,23 @@
 box-shadow: 5px 5px 11px rgba(0,0, 0, .5);
 padding: 0 20px;
 }
-@media only screen and (max-width:689px) {
+ /* mobile device  */
+@media only screen and (max-width:688px) {
     .shop-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .caps-container{
         grid-template-columns: repeat(1,1fr);
+
+    }
+}
+/* tables device */
+@media only screen and (min-width:689px) and (max-width:990px) {
+    .shop-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .caps-container{
+        grid-template-columns: repeat(2,1fr);
 
     }
 }
