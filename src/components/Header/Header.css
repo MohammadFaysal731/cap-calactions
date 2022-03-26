@@ -1,0 +1,16 @@
+.header{
+    background-color: cornflowerblue;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .icon-left{
+    margin-right: 20px;
+    font-size: 40px;
+}
+.header .icon-right{
+    margin-left: 20px;
+    font-size: 40px;
+}
