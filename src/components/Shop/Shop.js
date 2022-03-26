@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Caps from '../Caps/Caps';
+import Cart from '../Cart/Cart';
 import './Shop.css';
 const Shop = () => {
+
     const caps = [
         {
             name: 'White Cap',
@@ -77,6 +79,11 @@ const Shop = () => {
         },
     ];
 
+    const [cap, setCaps] = useState([]);
+    const handelAddToCart = (selectedCap) => {
+        const newCap = [...cap, selectedCap];
+        setCaps(newCap);
+    }
     return (
         <div className='shop-container'>
             <div className="caps-container">
@@ -84,11 +91,15 @@ const Shop = () => {
                     caps.map(cap => <Caps
                         cap={cap}
                         key={cap.id}
+                        handelAddToCart={handelAddToCart}
                     ></Caps>)
                 }
             </div>
             <div className="selected-cap">
-                <h2>selected products</h2>
+                <Cart
+                    cap={cap}
+                    key={cap.id}
+                ></Cart>
             </div>
         </div>
     );

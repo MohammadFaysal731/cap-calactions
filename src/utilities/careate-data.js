@@ -72,7 +72,3 @@ const caps = [
         img: 'https://img.freepik.com/free-psd/front-view-baseball-cap-mockup_1310-826.jpg'
     },
 ];
-
-export {
-    caps
-};
