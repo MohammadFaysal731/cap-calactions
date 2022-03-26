@@ -1,6 +1,6 @@
 # Cap Collection 
 
-This is project link [https://magnificent-nougat-dacc64.netlify.app/];
+This is project link [https://cap-collection.netlify.app/];
 
 ## Available Scripts
 
