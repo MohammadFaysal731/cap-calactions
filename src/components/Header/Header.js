@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <GiBilledCap className='icon-left'></GiBilledCap>
-            <h1>Cap Collection</h1>
+            <h1>Cap Collection For faysal</h1>
             <GiBilledCap className='icon-right'></GiBilledCap>
         </div>
     );
